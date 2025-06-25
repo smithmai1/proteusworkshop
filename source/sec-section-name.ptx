@@ -1,81 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-section-name" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Section Title</title>
+  <title>Question for Chapter 3.3</title>
   
   <p> Text of section. </p>
   
-  <exercise label="number-theory-proof" adaptive="yes">
-  <title>Parsons Problem, Mathematical Proof</title>
-  <idx>even numbers</idx>
-  <statement>
-    <p>
-      Create a proof of the theorem: If <m>n</m> is an even number,
-      then <m>n\equiv 0\mod 2</m>.
-    </p>
-    <p>
-      [Ed.
-      If you examine the source,
-      you will also notice the <tag>exercise</tag> lacks a <attr>language</attr> attribute.
-      It is relying on the <c>docinfo/parsons/@language</c> value that is in bookinfo.xml.
-      If present, that attribute will be used for any Parsons that lack a <attr>language</attr>.]
-    </p>
-  </statement>
-  <blocks>
-  <block order="2">
-  <p>
-    Suppose <m>n</m> is even.
-  </p>
-  </block>
-  <block order="3">
-  <choice>
-  <p>
-    Then <m>n</m> is a prime number.
-  </p>
-  </choice>
-  <choice correct="yes">
-  <p>
-    Then there exists an <m>m</m> so that <m>n = 2m</m>.
-  </p>
-  </choice>
-  <choice>
-  <p>
-    Then there exists an <m>m</m> so that <m>n = 2m + 1</m>.
-  </p>
-  </choice>
-  </block>
-  <block order="1" correct="no">
-  <p>
-    Click the heels of your ruby slippers together three times.
-  </p>
-  </block>
-  <block order="5">
-  <p>
-    So <m>n = 2m + 0</m>.
-  </p>
-  <p>
-    This is a superfluous second paragraph in this block.
-  </p>
-  </block>
-  <block order="4">
-  <p>
-    Thus <m>n\equiv 0\mod 2</m>.
-  </p>
-  </block>
-  <block order="6" correct="no">
-  <p>
-    And a little bit of irrelevant multi-line math
-    <md>
-      <mrow>c^2&amp;a^2+b^2</mrow>
-      <mrow>&amp;x^2+y^2</mrow>
-    </md>.
-  </p>
-  </block>
-  </blocks>
-  <hint>
-    <p>
-      Dorothy will not be much help with this proof.
-    </p>
-  </hint>
-</exercise>
+  <exercise label="APEX-PROTEUS-graph-incdec-1-v1" component="proteus">
+    <statement>
+      <p>
+        Referring to the graph below, drag each interval on the left to 
+        either increasing or decreasing. 
+      </p>
+
+      <image source="images/proteus-inc-graph-1.png" width="47%">
+        <shortdescription>Graph of a polynomial function in the first quadrant.</shortdescription>
+      </image>
+    </statement>
+    <cardsort>
+      <match>
+        <premise><m>(-6, -3.1)</m></premise>
+        <premise><m>(-0.75, 2)</m></premise>
+        <premise><m>(4.3, \infty)</m></premise>
+        <response>Increasing</response>
+      </match>
+      <match>
+        <premise><m>(-\infty, -6)</m></premise>
+        <premise><m>(-3.1, -0.75)</m></premise>
+        <premise><m>(2, 4.3)</m></premise>
+        <response>Decreasing</response>
+      </match>
+      <match>
+        <premise><m>(-5, -2)</m></premise>
+        <premise><m>(-\infty, -3.1)</m></premise>
+      </match>
+      
+      
+      
+    </cardsort>  
+  </exercise>
 </section>
